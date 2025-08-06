@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Privacy Masker",
-  "version": "1.9",
-  "description": "Finds and masks emails and potential passwords in text areas with stars.",
+  "version": "2",
+  "description": "Finds and masks emails and potential passwords in text areas and contentEditable elements with stars.",
   "permissions": ["storage"],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["scripts/content.js"]
+      "js": ["scripts/contentEditable-content.js"]
     }
   ],
   "icons": {
